@@ -26,6 +26,19 @@ Project uses Spring Boot and MySql Workbench. Installation links for same are as
 
 ![image](https://user-images.githubusercontent.com/63504802/89121847-4eeae080-d4e0-11ea-9084-362cd8cde05c.png)
 
+### Structure :-
+
+1.	There is a login page to authenticate that the user is legible to open the application.
+2.	Following this, if the right username and password are used, the application opens to a dashboard.
+3.	We can upload a file in the application i.e. Excel files to check against the various parameters 
+```Parameters include: Transaction Ref#, Date, Payer Name, Payer Account #, Payee Name, Payee Account #, Amount .```
+4.	Once the file is uploaded, View button validates the file and accordingly status is update (Validate_Pass or Validate_Fail).
+5.	Later, screen button are displayed if validation is passed.
+6.	After clicking screen button, List of keywords is retrieved from database.
+7.	These keyword are then checked in selected transaction list. That is, they are passed for screening and accordingly status are updated as Screen_Pass or Screen_Fail
+8.	And is displayed on Screen.
+
+
 ## MySql and Log4j2 connection
 
 application.properties:-
